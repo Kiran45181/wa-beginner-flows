@@ -18,5 +18,10 @@ def etl_flow():
     processed = transform(raw)
     load(processed)
 
+@flow
+def post_etl_flow():
+    return "Post ETL tasks executed"  # Won't show in Cloud
+
+
 if __name__ == "__main__":
     etl_flow()
