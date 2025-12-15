@@ -19,13 +19,13 @@ def etl_flow():
     processed = transform(raw)
     load(processed)
 
-@flow
-def post_etl_flow(job_name: str = "Daily ETL"):
-    return f"Running job: {job_name}"
+#@flow
+#def post_etl_flow(job_name: str = "Daily ETL"):
+    #return f"Running job: {job_name}"
 
 
 if __name__ == "__main__":
     etl_flow()
 
-    message = post_etl_flow(job_name="Morning ETL")
-    print(message)
+    #message = post_etl_flow(job_name="Morning ETL")
+    #print(message)
