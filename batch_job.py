@@ -10,7 +10,7 @@ def transform(data):
 
 @task
 def load(data):
-    return f"{data}"
+    raise Exception("Simulated failure")
 
 @flow
 def etl_flow(job_name: str = "Default Job"):
